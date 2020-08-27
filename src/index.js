@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import FruitContainer from './FruitContainer';
+
+const fruits = ['apple','orange','banana','pear','pineapple','jicama','starfuit']
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FruitContainer fruits={fruits} />
   </React.StrictMode>,
   document.getElementById('root')
 );
